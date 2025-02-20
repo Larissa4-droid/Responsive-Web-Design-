@@ -4,6 +4,9 @@
     margin: 0;
     padding: 0;
   }
+  html{
+    scroll-behavior: smooth;
+  }
   
   /* Global Styles */
   body {
@@ -14,7 +17,15 @@
     background-color: #f4f4f4;
     
   }
-
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  } 
+  nav ul{
+    display: flex;
+    gap: 20px;
+  }
   main{
     max-width: 1200px;
     margin:0px auto;
@@ -26,12 +37,13 @@
     padding: 20px 30px;
     color: #fff;
     height: auto;
+    justify-content: space-between;
   }
   
   .navbar {
     list-style: none;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     
   }
   
@@ -62,6 +74,73 @@
     margin-bottom: 10px;
   }
 
+  h1,h2 {
+    font-style: italic;
+    color: chocolate;
+  }
+
+  h3 {
+    color: royalblue;
+  }
+  
+  #about {
+    display: flex; 
+    flex-direction: row;
+    align-items: self-start;
+    justify-content: left;
+    gap: 20px;
+  }
+  
+  .holder {
+    display: flex;
+    align-items: self-start;
+    background: white;
+    padding: 40px;
+    max-width: 800px;
+  }
+
+  .profile-img{
+    width: 200px; 
+    max-width: 200px; 
+    height: 200px; 
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 50px;
+  }
+
+  .text {
+    max-width: 600px;
+    align-items: center;
+  }
+
+  .container {
+    display: flex;
+    gap: 20px;
+    text-align: justify; 
+    max-width: 900px; 
+    margin: auto;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .reviews {
+    flex: 1; 
+    padding: 20px;
+    text-align: center;
+     
+}
+
+.reviews img {
+  width: 150px; 
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+ 
+  article {
+    margin-bottom: 30px; 
+  }
   /* Form Styles */
   form {
     display: flex;
@@ -113,4 +192,14 @@
       display: flex;
     }
     
-  }    
+    .holder {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+      background: white;
+      padding: 40px;
+      max-width: 800px;
+    }
+  }

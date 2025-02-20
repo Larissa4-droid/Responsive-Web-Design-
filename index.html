@@ -4,12 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>My Resume</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css" /> 
 </head>
 <body>
   <!-- Header and Navigation -->
   <header>
     <nav>
+      <h1>Larissa's Resume</h1>
       <ul class="navbar">
         <li><a href="#about">About</a></li>
         <li><a href="#experience">Experience</a></li>
@@ -26,17 +27,22 @@
   <main>
     
     <section id="about">
+      <div class="about">
       <h1>About</h1>
-      <img src="image1.jpeg" alt="image1.jpeg">
+      <div class="holder">
+      <img src="image1.jpeg" alt="Larissa Iriza" class="profile-img">
+      <div class="text">
       <p>I’m Larissa, a Software Engineering student at African Leadership University with a passion for building innovative and impactful tech solutions. I enjoy coding, problem-solving, and exploring how technology can drive positive change.
 
         I’m always eager to learn, collaborate, and work on exciting projects. Let’s connect!.</p>
-          <ul>
-        <li><strong>Full Name:</strong>    Larissa Iriza</li>
-               <li><strong>Date of Birth:</strong>    26 November 2004</li>
-               <li><strong>Email:</strong>    l.iriza@alustudent.com</li>
-              </ul>
-              </div>
+          
+        <p><strong>Full Name:</strong>    Larissa Iriza</p>
+               <p><strong>Date of Birth:</strong>    26 November 2004</p>
+               <p><strong>Email:</strong>    l.iriza@alustudent.com</p>
+              
+      </div>
+      </div>
+      </div>
     </section>
 
     <!-- Experience Section -->
@@ -84,9 +90,21 @@
     <!-- Reviews Section -->
     <section id="reviews">
       <h2>Reviews</h2>
-      <article class="reviews">
-        <p>Brief description of the project, technologies used, and your role.</p>
-      </article>
+      <h3>What People Say</h3>
+      <div class="container">
+        <article class="reviews">
+        <img src="rally.jpg" alt="rally">
+        <h4>My Previous Employer</h4> 
+        <span>QUEEN KALIMPINYA</span>
+        <p>Larissa is a highly dedicated and detail-oriented professional. During her time as my personal assistant, she managed complex schedules efficiently and demonstrated excellent problem-solving skills.</p>
+        </article>
+        <article class="reviews">
+        <img src="colleague.jpeg" alt="colleague">
+        <h4>My Previous colleague</h4>
+        <span>ELUCIE RURANGWA</span>
+        <P>Working with Larissa was a pleasure. She was always supportive, quick to adapt to new challenges, and maintained a positive attitude that motivated the entire team.</P>
+        </article>
+      </div>
     </section>
 
     <!-- Contact Section -->
